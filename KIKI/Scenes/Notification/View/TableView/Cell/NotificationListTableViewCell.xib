@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="notificationListCell" rowHeight="59" id="z2o-t6-u8k" customClass="NotificationListTableViewCell" customModule="KIVI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z2o-t6-u8k" id="aRx-gk-QkF">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OrderingTabBarIconSelected" translatesAutoresizingMaskIntoConstraints="NO" id="7bd-2e-sdm">
+                        <rect key="frame" x="34" y="15" width="35" height="35"/>
+                        <color key="tintColor" name="reddishOrange"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="KP5-22-2VY"/>
+                            <constraint firstAttribute="height" constant="35" id="X2c-BS-nFQ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 min ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eot-44-BJx">
+                        <rect key="frame" x="325" y="8.5" width="55" height="14"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="10"/>
+                        <color key="textColor" name="topaz - Three"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPP-t6-923">
+                        <rect key="frame" x="85" y="24" width="295" height="17"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="12"/>
+                        <color key="textColor" name="darkIndigo"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Eot-44-BJx" secondAttribute="trailing" constant="34" id="0oJ-Oa-3xb"/>
+                    <constraint firstAttribute="trailing" secondItem="iPP-t6-923" secondAttribute="trailing" constant="34" id="IOU-2W-Bbp"/>
+                    <constraint firstItem="7bd-2e-sdm" firstAttribute="leading" secondItem="aRx-gk-QkF" secondAttribute="leading" constant="34" id="MPK-YU-Tjx"/>
+                    <constraint firstAttribute="bottom" secondItem="iPP-t6-923" secondAttribute="bottom" constant="18" id="VT8-4c-yQ2"/>
+                    <constraint firstItem="iPP-t6-923" firstAttribute="centerY" secondItem="7bd-2e-sdm" secondAttribute="centerY" id="WGa-g1-8ui"/>
+                    <constraint firstItem="Eot-44-BJx" firstAttribute="top" secondItem="aRx-gk-QkF" secondAttribute="top" constant="8.5" id="Zsw-5O-RUZ"/>
+                    <constraint firstItem="iPP-t6-923" firstAttribute="top" secondItem="Eot-44-BJx" secondAttribute="bottom" constant="1.5" id="fvQ-0F-aZ4"/>
+                    <constraint firstItem="iPP-t6-923" firstAttribute="leading" secondItem="7bd-2e-sdm" secondAttribute="trailing" constant="16" id="i6i-if-PjY"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                        <color key="value" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                        <real key="value" value="1"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="descriptionLabel" destination="iPP-t6-923" id="73d-G3-hmi"/>
+                <outlet property="notificationImageView" destination="7bd-2e-sdm" id="5wc-BD-BVZ"/>
+                <outlet property="timeLabel" destination="Eot-44-BJx" id="asL-zy-ke1"/>
+            </connections>
+            <point key="canvasLocation" x="160.86956521739131" y="227.34375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="OrderingTabBarIconSelected" width="23.298000335693359" height="29.003000259399414"/>
+        <namedColor name="darkIndigo">
+            <color red="0.058823529411764705" green="0.086274509803921567" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="reddishOrange">
+            <color red="0.96100002527236938" green="0.28600001335144043" blue="0.14499999582767487" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="topaz - Three">
+            <color red="0.10196078431372549" green="0.63137254901960782" blue="0.69019607843137254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

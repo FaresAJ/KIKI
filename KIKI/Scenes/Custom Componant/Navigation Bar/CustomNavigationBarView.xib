@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomNavigationBarView" customModule="KIVI" customModuleProvider="target">
+            <connections>
+                <outlet property="locationNameLabel" destination="Enc-o3-Qav" id="sk6-mc-D5h"/>
+                <outlet property="searchBar" destination="cof-Q4-HeZ" id="7k7-y5-he6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="86"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KVu-Gc-ik0">
+                    <rect key="frame" x="22" y="0.0" width="368" height="94"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UeZ-Ar-IOJ">
+                            <rect key="frame" x="0.0" y="0.0" width="368" height="23"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztq-C0-bMW">
+                                    <rect key="frame" x="0.0" y="0.0" width="19" height="23"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="23" id="orH-NP-DSj"/>
+                                        <constraint firstAttribute="width" constant="19" id="zlF-KG-oiB"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Button" image="location icon green"/>
+                                    <connections>
+                                        <action selector="changeCurrentLocationButtonTapped:" destination="-1" eventType="touchUpInside" id="MLX-Oz-J5K"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Enc-o3-Qav">
+                                    <rect key="frame" x="27" y="0.0" width="341" height="23"/>
+                                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="La Marsa, Tunisia">
+                                        <color key="titleColor" name="darkIndigo"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="changeCurrentLocationButtonTapped:" destination="-1" eventType="touchUpInside" id="gkV-gG-saK"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ryo-F3-yFu">
+                            <rect key="frame" x="0.0" y="23" width="368" height="71"/>
+                            <subviews>
+                                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Restaurants, plats ou catégories" translatesAutoresizingMaskIntoConstraints="NO" id="cof-Q4-HeZ">
+                                    <rect key="frame" x="-4" y="-10" width="372" height="81"/>
+                                    <textInputTraits key="textInputTraits" keyboardAppearance="light" returnKeyType="done"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="search"/>
+                                    </userDefinedRuntimeAttributes>
+                                </searchBar>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="cof-Q4-HeZ" secondAttribute="bottom" id="Ie9-zS-OuC"/>
+                                <constraint firstItem="cof-Q4-HeZ" firstAttribute="top" secondItem="Ryo-F3-yFu" secondAttribute="top" constant="-10" id="PJz-tA-0NZ"/>
+                                <constraint firstAttribute="trailing" secondItem="cof-Q4-HeZ" secondAttribute="trailing" id="QPT-pn-nRL"/>
+                                <constraint firstItem="cof-Q4-HeZ" firstAttribute="leading" secondItem="Ryo-F3-yFu" secondAttribute="leading" constant="-4" id="YVj-NS-D2G"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="xOU-Wk-ODt"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="KVu-Gc-ik0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Dhk-r8-YwW"/>
+                <constraint firstItem="KVu-Gc-ik0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="22" id="VRs-ii-7aT"/>
+                <constraint firstAttribute="bottom" secondItem="KVu-Gc-ik0" secondAttribute="bottom" constant="-8" id="edY-Zj-b3b"/>
+                <constraint firstAttribute="trailing" secondItem="KVu-Gc-ik0" secondAttribute="trailing" constant="24" id="mfb-EB-qjF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="149.33035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="location icon green" width="19.240999221801758" height="23.672000885009766"/>
+        <namedColor name="darkIndigo">
+            <color red="0.058823529411764705" green="0.086274509803921567" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

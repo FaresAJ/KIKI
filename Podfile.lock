@@ -1,0 +1,73 @@
+PODS:
+  - Alamofire (5.7.1)
+  - GoogleMaps (7.4.0):
+    - GoogleMaps/Maps (= 7.4.0)
+  - GoogleMaps/Base (7.4.0)
+  - GoogleMaps/Maps (7.4.0):
+    - GoogleMaps/Base
+  - GooglePlaces (7.4.0)
+  - JWTDecode (2.6.3)
+  - Kingfisher (7.7.0)
+  - Moya/Combine (15.0.0):
+    - Moya/Core
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Realm (10.40.0):
+    - Realm/Headers (= 10.40.0)
+  - Realm/Headers (10.40.0)
+  - RealmSwift (10.40.0):
+    - Realm (= 10.40.0)
+  - SkeletonView (1.30.4)
+  - SwiftKeychainWrapper (4.0.1)
+  - SwiftLint (0.52.2)
+  - Swinject (2.8.3)
+  - SwinjectAutoregistration (2.8.3):
+    - Swinject (~> 2.8.3)
+
+DEPENDENCIES:
+  - GoogleMaps
+  - GooglePlaces
+  - JWTDecode (~> 2.6)
+  - Kingfisher
+  - Moya/Combine
+  - RealmSwift
+  - SkeletonView
+  - SwiftKeychainWrapper
+  - SwiftLint
+  - Swinject
+  - SwinjectAutoregistration
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - GoogleMaps
+    - GooglePlaces
+    - JWTDecode
+    - Kingfisher
+    - Moya
+    - Realm
+    - RealmSwift
+    - SkeletonView
+    - SwiftKeychainWrapper
+    - SwiftLint
+    - Swinject
+    - SwinjectAutoregistration
+
+SPEC CHECKSUMS:
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  GoogleMaps: 032f676450ba0779bd8ce16840690915f84e57ac
+  GooglePlaces: 544e908d94860bf6f8fc1865b80d2c7eb6b5f937
+  JWTDecode: 33e5e26e5ddbd21b2065820894c08fef0cad9509
+  Kingfisher: f043ac666dfc96c1f37604f93effb45a7ee3a3e1
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  Realm: 67e2bc963e693a787961bd81d0594f2410615d9e
+  RealmSwift: 39622fdcd18d54e0ba49a7d31e9662404595e998
+  SkeletonView: 5a050f6411e697abd4cda0a8d767013399dccd69
+  SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
+  SwiftLint: 1ac76dac888ca05cb0cf24d0c85887ec1209961d
+  Swinject: 893c9a543000ac2f10ee4cbaf0933c6992c935d5
+  SwinjectAutoregistration: e3ee378dc458acf78d176fc7fec3902603452667
+
+PODFILE CHECKSUM: 70586ac6d2143a769af5437d15c5a0c2e378a4e2
+
+COCOAPODS: 1.12.1

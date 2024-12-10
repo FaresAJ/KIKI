@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" indentationWidth="0.0" rowHeight="214" id="KGk-i7-Jjw" customClass="DeliveryRestaurantListTableViewCell" customModule="KIVI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="221"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="221"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1i-qm-3eu">
+                        <rect key="frame" x="24" y="0.0" width="320" height="201"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gRa-wd-BnW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="Dew-OD-P9y"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L0B-XZ-Kuc" customClass="OverlayImageView" customModule="KIVI" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isOpen" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Gi2-MB-ywo">
+                                <rect key="frame" x="12" y="146" width="297" height="41.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wym-h3-AUP">
+                                        <rect key="frame" x="0.0" y="0.0" width="297" height="20"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Chili’s American Grill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YV5-5D-bJy">
+                                                <rect key="frame" x="0.0" y="0.0" width="241" height="20"/>
+                                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
+                                                <color key="textColor" name="darkIndigo"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="bs4-Gm-l3N">
+                                                <rect key="frame" x="241" y="0.0" width="56" height="20"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCG-wh-8U2" customClass="RatingView" customModule="KIVI" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="41" height="20"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="41" id="bjD-nR-Kqh"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="RatingView"/>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="()" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HlN-1p-n5D">
+                                                        <rect key="frame" x="45" y="0.0" width="11" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                                        <color key="textColor" name="darkIndigo"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                </subviews>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </stackView>
+                                        </subviews>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fP-4n-dLA">
+                                        <rect key="frame" x="0.0" y="26" width="297" height="15.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Burger • Ribs &amp; Steaks • Tacos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6x-LC-D4o">
+                                                <rect key="frame" x="0.0" y="0.0" width="163" height="15.5"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="11"/>
+                                                <color key="textColor" name="blueGrey"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="pEA-GQ-nE5">
+                                                <rect key="frame" x="163" y="0.0" width="134" height="15.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Min" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSN-mp-Kai">
+                                                        <rect key="frame" x="0.0" y="0.0" width="77" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="11"/>
+                                                        <color key="textColor" name="topaz - Two"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="•" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hln-N0-sHe">
+                                                        <rect key="frame" x="80" y="0.0" width="5.5" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="11"/>
+                                                        <color key="textColor" name="darkIndigo"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="location" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJY-eS-oQF">
+                                                        <rect key="frame" x="88.5" y="0.0" width="45.5" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="11"/>
+                                                        <color key="textColor" name="reddishOrange"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                </subviews>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </stackView>
+                                        </subviews>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </stackView>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cF1-sg-NSV">
+                                <rect key="frame" x="285" y="10" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="Z1L-qp-5na"/>
+                                    <constraint firstAttribute="height" constant="26" id="uw1-eV-8yu"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="Favorite icon unchecked"/>
+                                <connections>
+                                    <action selector="favoriteButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1f3-Fw-sAE"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vhT-cz-JnK">
+                                <rect key="frame" x="221" y="94" width="99" height="23"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 - 0 min" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qW-mX-B4C">
+                                        <rect key="frame" x="2" y="2" width="95" height="19"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="12"/>
+                                        <color key="textColor" name="topaz - Two"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="white - Four"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="8NL-P0-UEW"/>
+                                    <constraint firstAttribute="bottom" secondItem="4qW-mX-B4C" secondAttribute="bottom" constant="2" id="BYM-AZ-WnM"/>
+                                    <constraint firstAttribute="trailing" secondItem="4qW-mX-B4C" secondAttribute="trailing" constant="2" id="Krf-yM-RIj"/>
+                                    <constraint firstItem="4qW-mX-B4C" firstAttribute="top" secondItem="vhT-cz-JnK" secondAttribute="top" constant="2" id="Yho-iX-oqh"/>
+                                    <constraint firstItem="4qW-mX-B4C" firstAttribute="leading" secondItem="vhT-cz-JnK" secondAttribute="leading" constant="2" id="bb9-Yr-jWy"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o3w-ec-hrJ">
+                                <rect key="frame" x="0.0" y="7" width="154" height="35.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="khD-SC-TLy">
+                                        <rect key="frame" x="10" y="4" width="134" height="27.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30% discount up to 30dt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVb-6p-cx5">
+                                                <rect key="frame" x="0.0" y="0.0" width="134" height="15.5"/>
+                                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="11"/>
+                                                <color key="textColor" name="white - Four"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="svI-UP-lwP">
+                                                <rect key="frame" x="0.0" y="16.5" width="134" height="11"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vbI-D4-C4M">
+                                                        <rect key="frame" x="0.0" y="0.0" width="7" height="11"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Expire clock icon" translatesAutoresizingMaskIntoConstraints="NO" id="Rwl-W9-Iv4">
+                                                                <rect key="frame" x="0.0" y="2" width="7" height="7"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="7" id="f6Q-zj-git"/>
+                                                                    <constraint firstAttribute="height" constant="7" id="s8j-gZ-LSR"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="Rwl-W9-Iv4" firstAttribute="leading" secondItem="vbI-D4-C4M" secondAttribute="leading" id="0tK-65-huf"/>
+                                                            <constraint firstItem="Rwl-W9-Iv4" firstAttribute="centerX" secondItem="vbI-D4-C4M" secondAttribute="centerX" id="7F2-qX-umL"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Rwl-W9-Iv4" secondAttribute="trailing" id="beJ-rb-PGI"/>
+                                                            <constraint firstItem="Rwl-W9-Iv4" firstAttribute="centerY" secondItem="vbI-D4-C4M" secondAttribute="centerY" id="fgs-ez-P3P"/>
+                                                            <constraint firstAttribute="height" constant="11" id="wQe-el-BND"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expire dans 3 jours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTx-D2-Ia0">
+                                                        <rect key="frame" x="11" y="0.0" width="123" height="11"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="8"/>
+                                                        <color key="textColor" name="white - Four"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="reddishOrange - Two"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="khD-SC-TLy" secondAttribute="trailing" constant="10" id="JfJ-el-rOp"/>
+                                    <constraint firstItem="khD-SC-TLy" firstAttribute="leading" secondItem="o3w-ec-hrJ" secondAttribute="leading" constant="10" id="egF-q0-tMX"/>
+                                    <constraint firstItem="khD-SC-TLy" firstAttribute="top" secondItem="o3w-ec-hrJ" secondAttribute="top" constant="4" id="kPE-FO-QO4"/>
+                                    <constraint firstAttribute="bottom" secondItem="khD-SC-TLy" secondAttribute="bottom" constant="4" id="vJE-6a-cp1"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EJw-TW-H59">
+                                <rect key="frame" x="0.0" y="90" width="48" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GAt-3W-WTt"/>
+                                    <constraint firstAttribute="width" constant="48" id="ej4-5r-h2e"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="o3w-ec-hrJ" firstAttribute="top" secondItem="w1i-qm-3eu" secondAttribute="top" constant="7" id="0vd-Ik-P3e"/>
+                            <constraint firstItem="o3w-ec-hrJ" firstAttribute="leading" secondItem="w1i-qm-3eu" secondAttribute="leading" id="27H-Yo-Nmf"/>
+                            <constraint firstAttribute="trailing" secondItem="gRa-wd-BnW" secondAttribute="trailing" id="4Cu-ay-Dwe"/>
+                            <constraint firstItem="cF1-sg-NSV" firstAttribute="top" secondItem="w1i-qm-3eu" secondAttribute="top" constant="10" id="AtX-7u-TLS"/>
+                            <constraint firstItem="vhT-cz-JnK" firstAttribute="width" secondItem="gRa-wd-BnW" secondAttribute="width" multiplier="0.309375" id="D8U-Ep-F5N"/>
+                            <constraint firstItem="Gi2-MB-ywo" firstAttribute="top" secondItem="gRa-wd-BnW" secondAttribute="bottom" constant="6" id="IuH-V8-Qb5"/>
+                            <constraint firstItem="gRa-wd-BnW" firstAttribute="leading" secondItem="w1i-qm-3eu" secondAttribute="leading" id="Jp9-Gg-zSb"/>
+                            <constraint firstAttribute="bottom" secondItem="Gi2-MB-ywo" secondAttribute="bottom" constant="13.5" id="LUd-eW-C14"/>
+                            <constraint firstItem="vhT-cz-JnK" firstAttribute="top" secondItem="gRa-wd-BnW" secondAttribute="bottom" constant="-46" id="NJ6-yT-rL2"/>
+                            <constraint firstAttribute="trailing" secondItem="Gi2-MB-ywo" secondAttribute="trailing" constant="11" id="SZD-te-YZt"/>
+                            <constraint firstItem="EJw-TW-H59" firstAttribute="bottom" secondItem="gRa-wd-BnW" secondAttribute="bottom" id="U65-9n-d3b"/>
+                            <constraint firstAttribute="trailing" secondItem="vhT-cz-JnK" secondAttribute="trailing" id="d7H-nH-eBj"/>
+                            <constraint firstItem="L0B-XZ-Kuc" firstAttribute="height" secondItem="gRa-wd-BnW" secondAttribute="height" id="e9f-2w-kjt"/>
+                            <constraint firstItem="EJw-TW-H59" firstAttribute="leading" secondItem="w1i-qm-3eu" secondAttribute="leading" id="g5q-Py-3us"/>
+                            <constraint firstItem="L0B-XZ-Kuc" firstAttribute="centerX" secondItem="gRa-wd-BnW" secondAttribute="centerX" id="jGG-y1-n7D"/>
+                            <constraint firstItem="L0B-XZ-Kuc" firstAttribute="width" secondItem="gRa-wd-BnW" secondAttribute="width" id="jHj-bl-fYc"/>
+                            <constraint firstAttribute="trailing" secondItem="cF1-sg-NSV" secondAttribute="trailing" constant="9" id="lvm-j6-s8V"/>
+                            <constraint firstItem="Gi2-MB-ywo" firstAttribute="leading" secondItem="w1i-qm-3eu" secondAttribute="leading" constant="12" id="srG-ba-TKK"/>
+                            <constraint firstItem="gRa-wd-BnW" firstAttribute="top" secondItem="w1i-qm-3eu" secondAttribute="top" id="vro-8f-8Bd"/>
+                            <constraint firstItem="L0B-XZ-Kuc" firstAttribute="centerY" secondItem="gRa-wd-BnW" secondAttribute="centerY" id="zV2-li-eBs"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="w1i-qm-3eu" secondAttribute="trailing" constant="24" id="J1e-so-dI4"/>
+                    <constraint firstItem="w1i-qm-3eu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="QO2-R0-qeY"/>
+                    <constraint firstAttribute="bottom" secondItem="w1i-qm-3eu" secondAttribute="bottom" constant="20" id="Xb4-RS-WSu"/>
+                    <constraint firstItem="w1i-qm-3eu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dSX-hd-3lu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="containerView" destination="w1i-qm-3eu" id="cnn-d4-5tl"/>
+                <outlet property="coverImageView" destination="gRa-wd-BnW" id="hXW-KK-iGG"/>
+                <outlet property="deliveryDiscountContainerView" destination="o3w-ec-hrJ" id="zbe-GC-Rrk"/>
+                <outlet property="deliveryTimeEstimateContainerView" destination="vhT-cz-JnK" id="fyQ-zm-22q"/>
+                <outlet property="deliveryTimeEstimationLabel" destination="4qW-mX-B4C" id="jqD-O8-RZ0"/>
+                <outlet property="discountExpireLabel" destination="fTx-D2-Ia0" id="jPv-SS-942"/>
+                <outlet property="discountIconImageView" destination="EJw-TW-H59" id="hRW-hi-8hC"/>
+                <outlet property="discountTitleLabel" destination="vVb-6p-cx5" id="Rcf-mw-a1i"/>
+                <outlet property="distanceLocationLabel" destination="HJY-eS-oQF" id="uxE-z7-OY5"/>
+                <outlet property="favoriteButton" destination="cF1-sg-NSV" id="PMw-6f-20L"/>
+                <outlet property="minimumOrderPriceLabel" destination="JSN-mp-Kai" id="c3O-nb-hSP"/>
+                <outlet property="overlayImageView" destination="L0B-XZ-Kuc" id="P8f-dL-eTk"/>
+                <outlet property="ratingCountLabel" destination="HlN-1p-n5D" id="U9g-ie-eD7"/>
+                <outlet property="ratingView" destination="mCG-wh-8U2" id="h1p-Vo-Bd6"/>
+                <outlet property="specialityLabel" destination="o6x-LC-D4o" id="NoH-Gr-1YN"/>
+                <outlet property="titleLabel" destination="YV5-5D-bJy" id="0Ce-lR-Hbb"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="133.59375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Expire clock icon" width="6.9279999732971191" height="6.9279999732971191"/>
+        <image name="Favorite icon unchecked" width="26" height="26"/>
+        <namedColor name="blueGrey">
+            <color red="0.52941176470588236" green="0.5490196078431373" blue="0.63529411764705879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkIndigo">
+            <color red="0.058823529411764705" green="0.086274509803921567" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="reddishOrange">
+            <color red="0.96100002527236938" green="0.28600001335144043" blue="0.14499999582767487" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="reddishOrange - Two">
+            <color red="0.96078431372549022" green="0.29019607843137257" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="topaz - Two">
+            <color red="0.10196078431372549" green="0.62745098039215685" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white - Four">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

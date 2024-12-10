@@ -1,0 +1,36 @@
+ /* 
+  Localizable.strings
+  KIKI
+
+  Created by Fares Ajimi on 6/12/2021.
+  
+*/
+
+// MARK: - Custom Navigation Bar View
+
+"search" = "Restaurants, plats ou catégories";
+
+// MARK: - OfflineBannerView
+
+"connectionInterrupted" = "Connexion internet interrompue";
+"connectionRestored" = "Connexion internet rétablie";
+
+// MARK: - Login
+
+"password" = "Mot de passe";
+"connection" = "Connexion";
+"saveLogin" = "Restez connecté";
+"clickHere" = "Cliquez içi";
+"forgotPassword" = "Mot de passe oublié?";
+"continue" = "Continuer";
+"orConnectUsing" = "Ou connectez vous avec";
+
+// MARK: - General
+
+"seeMore" = "Voir plus";
+"closed" = "fermé";
+"expiresIn" = "Expire dans";
+"days" = "jours";
+"day" = "jour";
+"hours" = "heures";
+"hour" = "heure";
